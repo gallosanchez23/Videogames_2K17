@@ -1,0 +1,24 @@
+Pantallas de Control:
+	Pantalla de inicio
+		Comenzar
+		Controles
+		Creditos
+		Salida
+
+Niveles:
+
+	Primera Pantalla del Juego: Oscura con letras blancas y describe la historia de fondo
+
+	3 Niveles:
+		>Cuarto de celdas (segundo sotano)
+		>Lugar Comun [LC] (primer sotano)
+		>Headquarters (planta baja)
+
+	Pantallas de Fin:	
+		Fin 1 (recolecta 0-2 pruebas)
+			Fin malo, vuelves a prision.
+		Fin 2 (recolecta 3-8 pruebas)
+			Fin neutral, escapas y pruebas tu inocencia pero no encuentran al culpable
+		Fin 3 (recolecta 9-10 pruebas)
+			Fin bueno, escapas y pruebas tu inocencia; encuentran al culpable
+		Pantalla de Game Over
