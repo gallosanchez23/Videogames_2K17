@@ -23,30 +23,30 @@ public class CopMovement : MonoBehaviour {
 
 		GetComponent<Rigidbody2D>().velocity = direction * speed;
 
-		switch (movementOrder [currentMovement%arraySize]) {
+		switch (movementOrder [currentMovement]) {
 		case 0:
 			if ((transform.position.y - initialPosition.y) > dBound) {
-				nextMove = currentMovement;
+				nextPosition = currentMovement;
 			}
 			break;
 		case 1:
 			if ((transform.position.y - initialPosition.y) < uBound) {
-				nextMove = currentMovement;
+				nextPosition = currentMovement;
 			}
 			break;
 		case 2:
 			if ((transform.position.x - initialPosition.x) > lBound) {
-				nextMove = currentMovement;
+				nextPosition = currentMovement;
 			}
 			break;
 		case 3:
 			if ((transform.position.x - initialPosition.x) < rBound) {
-				nextMove = currentMovement;
+				nextPosition = currentMovement;
 			}
 			break;
 		}
 
-		currentMovement = nextMove;
+		currentMovement = nextPosition;
 	}
 
 	// Use this for initialization
@@ -66,7 +66,7 @@ public class CopMovement : MonoBehaviour {
 		int arraySize = movementOrder.Length;
 		Vector2 direction = new Vector2 (0, 0);
 
-		switch (movementOrder [currentMovement%arraySize]) {
+		switch (movementOrder [currentMovement]) {
 		case 0:
 			direction.x = 0;
 			direction.y = -1;

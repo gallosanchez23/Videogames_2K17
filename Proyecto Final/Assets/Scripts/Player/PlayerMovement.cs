@@ -9,30 +9,13 @@ public class PlayerMovement : MonoBehaviour {
 
 
 	public float playerSpeed = 4f;
-	private Vector2 sPosition;
-
-	public int playerLives;
 
 	void Start () {
-		sPosition = transform.position;
 	}
 
 	void FixedUpdate () {
 		Vector2 targetVelocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 		GetComponent<Rigidbody2D>().velocity=targetVelocity * playerSpeed;
-
-	}
-
-	void OnTriggerEnter2D(Collider2D other){
-		if (other.gameObject.CompareTag ("FOV")) {
-			transform.position = sPosition;
-			playerLives--;
-			print ("Lives Left: " + playerLives.ToString());
-		}
-
-		if (playerLives < 0) {
-			print ("Game Over");
-		}
 
 	}
 }
