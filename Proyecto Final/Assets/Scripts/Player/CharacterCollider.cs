@@ -2,17 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CharacterCollider : MonoBehaviour{
 
 	private int keys_counter;
+	public int playerLives;
+	private int clues_counter;
 	public Text keys_count_text;
 	public Text lives_count_text;
+	public Text clues_count_text;
 
 	bool bMasterKey;
 
 	private Vector2 sPosition;
-	public int playerLives;
 
 	private int character_gate_counter = 0;
 	private GameObject[] masterKey;
@@ -34,17 +37,26 @@ public class CharacterCollider : MonoBehaviour{
 	private GameObject[] false_objects = new GameObject[6];
 
 	void SetCountText(){
-		keys_count_text.text = "x : " + keys_counter.ToString();
+		keys_count_text.text = "x " + keys_counter.ToString();
 	}
 
 	void SetLivesText(){
-		lives_count_text.text = "x : " + playerLives.ToString();
+		lives_count_text.text = "x " + playerLives.ToString();
+	}
+
+	void SetCluesText(){
+		clues_count_text.text = "x " + clues_counter.ToString ();
+	}
+
+	void Awake(){
+		DontDestroyOnLoad (transform.gameObject);
 	}
 
 	void Start(){
 
 		sPosition = transform.position;
 		keys_counter = 0;
+		clues_counter = 0;
 		bMasterKey = false;
 
 		masterKey = GameObject.FindGameObjectsWithTag ("Master Key");
@@ -76,6 +88,7 @@ public class CharacterCollider : MonoBehaviour{
 
 		SetCountText();
 		SetLivesText ();
+		SetCluesText ();
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
@@ -180,6 +193,20 @@ public class CharacterCollider : MonoBehaviour{
 			bMasterKey = true;
 			Destroy (other.gameObject);
 			masterKey[0].SetActive (bMasterKey);
+		}
+
+		else if (other.gameObject.CompareTag ("Obj_Clue")) {
+			clues_counter++;
+			Destroy (other.gameObject);
+			SetCluesText ();
+		}
+
+		else if (other.gameObject.CompareTag ("NextLevel")) {
+			transform.position = new Vector2(0,0);
+			SceneManager.LoadScene("Outer Level");
+			SetCountText();
+			SetLivesText ();
+			SetCluesText ();
 		}
 	}
 }
