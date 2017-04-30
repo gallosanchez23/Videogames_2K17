@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour {
 	public float playerSpeed = 4f;
 	private Vector2 sPosition;
 
+	public int playerLives;
+
 	void Start () {
 		sPosition = transform.position;
 	}
@@ -24,8 +26,13 @@ public class PlayerMovement : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.gameObject.CompareTag ("FOV")) {
 			transform.position = sPosition;
-			print ("Hi");
+			playerLives--;
+			print ("Lives Left: " + playerLives.ToString());
 		}
-			
+
+		if (playerLives < 0) {
+			print ("Game Over");
+		}
+
 	}
 }
