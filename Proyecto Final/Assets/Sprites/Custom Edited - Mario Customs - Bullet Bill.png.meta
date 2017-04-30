@@ -1,0 +1,622 @@
+fileFormatVersion: 2
+guid: d6e23ce0d933d5c49a252a66d45680cc
+timeCreated: 1489546503
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Custom Edited - Mario Customs - Bullet Bill_0
+    21300002: Custom Edited - Mario Customs - Bullet Bill_1
+    21300004: Custom Edited - Mario Customs - Bullet Bill_2
+    21300006: Custom Edited - Mario Customs - Bullet Bill_3
+    21300008: Custom Edited - Mario Customs - Bullet Bill_4
+    21300010: Custom Edited - Mario Customs - Bullet Bill_5
+    21300012: Custom Edited - Mario Customs - Bullet Bill_6
+    21300014: Custom Edited - Mario Customs - Bullet Bill_7
+    21300016: Custom Edited - Mario Customs - Bullet Bill_8
+    21300018: Custom Edited - Mario Customs - Bullet Bill_9
+    21300020: Custom Edited - Mario Customs - Bullet Bill_10
+    21300022: Custom Edited - Mario Customs - Bullet Bill_11
+    21300024: Custom Edited - Mario Customs - Bullet Bill_12
+    21300026: Custom Edited - Mario Customs - Bullet Bill_13
+    21300028: Custom Edited - Mario Customs - Bullet Bill_14
+    21300030: Custom Edited - Mario Customs - Bullet Bill_15
+    21300032: Custom Edited - Mario Customs - Bullet Bill_16
+    21300034: Custom Edited - Mario Customs - Bullet Bill_17
+    21300036: Custom Edited - Mario Customs - Bullet Bill_18
+    21300038: Custom Edited - Mario Customs - Bullet Bill_19
+    21300040: Custom Edited - Mario Customs - Bullet Bill_20
+    21300042: Custom Edited - Mario Customs - Bullet Bill_21
+    21300044: Custom Edited - Mario Customs - Bullet Bill_22
+    21300046: Custom Edited - Mario Customs - Bullet Bill_23
+    21300048: Custom Edited - Mario Customs - Bullet Bill_24
+    21300050: Custom Edited - Mario Customs - Bullet Bill_25
+    21300052: Custom Edited - Mario Customs - Bullet Bill_26
+    21300054: Custom Edited - Mario Customs - Bullet Bill_27
+    21300056: Custom Edited - Mario Customs - Bullet Bill_28
+    21300058: Custom Edited - Mario Customs - Bullet Bill_29
+    21300060: Custom Edited - Mario Customs - Bullet Bill_30
+    21300062: Custom Edited - Mario Customs - Bullet Bill_31
+    21300064: Custom Edited - Mario Customs - Bullet Bill_32
+    21300066: Custom Edited - Mario Customs - Bullet Bill_33
+    21300068: Custom Edited - Mario Customs - Bullet Bill_34
+    21300070: Custom Edited - Mario Customs - Bullet Bill_35
+    21300072: Custom Edited - Mario Customs - Bullet Bill_36
+    21300074: Custom Edited - Mario Customs - Bullet Bill_37
+    21300076: Custom Edited - Mario Customs - Bullet Bill_38
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 241
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 241
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 239
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_3
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 236
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_4
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 235
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_5
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 236
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_6
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 239
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_7
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 239
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_8
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 206
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_9
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 206
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_10
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 206
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_11
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 206
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 206
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_13
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 206
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_14
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 206
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_15
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 171
+        width: 46
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_16
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 171
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_17
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 171
+        width: 48
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_18
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 171
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_19
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 131
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_20
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 131
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_21
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 129
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_22
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 126
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_23
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 125
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_24
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 126
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_25
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 129
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_26
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 129
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_27
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 96
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_28
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 96
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_29
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 96
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_30
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 96
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_31
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 96
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_32
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_33
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 96
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_34
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 61
+        width: 46
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_35
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 61
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_36
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 61
+        width: 48
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_37
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 61
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bullet Bill_38
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 5
+        width: 210
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
