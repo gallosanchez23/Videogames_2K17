@@ -1,15 +1,15 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player\CharacterCollider.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Cop\CopMovement.cs">
     <Files>
       <File FileName="Assets\Scripts\Level\Level.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Level\BoardManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Level\GameManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Level\Loader.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Player\PlayerMovement.cs" Line="6" Column="42" />
-      <File FileName="Assets\Scripts\Player\CharacterCollider.cs" Line="11" Column="2" />
-      <File FileName="Assets\Scripts\Cop\CopMovement.cs" Line="26" Column="41" />
-      <File FileName="Assets\Scripts\Cop\FOV.cs" Line="17" Column="26" />
+      <File FileName="Assets\Scripts\Player\PlayerMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Player\CharacterCollider.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Cop\CopMovement.cs" Line="29" Column="17" />
+      <File FileName="Assets\Scripts\Cop\FOV.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
