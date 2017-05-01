@@ -208,5 +208,9 @@ public class CharacterCollider : MonoBehaviour{
 			SetLivesText ();
 			SetCluesText ();
 		}
+
+		else if (other.gameObject.CompareTag ("Insider")) {
+			SceneManager.LoadScene("SceneMiniGame");
+		}
 	}
 }
