@@ -12,8 +12,8 @@ public class random : MonoBehaviour {
 	//public AudioClip impact;
 	// Use this for initialization
 	void Start () {
-		count = 0;
-		countText.text = "Objetivos destruidos: " + count.ToString();
+		count = 5;
+		countText.text = "x " + count.ToString();
 		Vector2 pos = new Vector2 (Random.Range (0, 8), Random.Range (0, 5));
 		transform.position = pos;
 	}
@@ -28,12 +28,12 @@ public class random : MonoBehaviour {
 		if(other.gameObject.CompareTag("Bullet"))
 		{
 			//AudioSource.PlayClipAtPoint(impact, this.transform.position);
-			count++; //score
-			countText.text = "Objetivos destruidos: " + count.ToString();
+			count--; //score
+			countText.text = "x " + count.ToString();
 			Destroy (other.gameObject);
 			Vector2 pos = new Vector2 (Random.Range (0, 9), Random.Range (0, 5));
 			transform.position = pos;
-			if(count == 5) // win condition
+			if(count == 0) // win condition
 			{
 				Application.LoadLevel("Victory");
 			}

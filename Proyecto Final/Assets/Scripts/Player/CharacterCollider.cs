@@ -202,7 +202,7 @@ public class CharacterCollider : MonoBehaviour{
 		}
 
 		else if (other.gameObject.CompareTag ("NextLevel")) {
-			transform.position = new Vector2(0,0);
+			transform.position = new Vector2(-8.0f,5.0f);
 			SceneManager.LoadScene("Outer Level");
 			SetCountText();
 			SetLivesText ();
