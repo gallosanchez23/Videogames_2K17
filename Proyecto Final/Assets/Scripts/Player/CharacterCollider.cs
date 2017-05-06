@@ -185,7 +185,7 @@ public class CharacterCollider : MonoBehaviour{
 			SetLivesText ();
 
 			if (playerLives < 0) {
-				print ("Game Over");
+				SceneManager.LoadScene ("Game Over");
 			}
 		}
 
@@ -202,15 +202,25 @@ public class CharacterCollider : MonoBehaviour{
 		}
 
 		else if (other.gameObject.CompareTag ("NextLevel")) {
+			bMasterKey = false;
+			masterKey[0].SetActive (bMasterKey);
 			transform.position = new Vector2(-8.0f,5.0f);
-			SceneManager.LoadScene("Outer Level");
+			SceneManager.LoadScene("SceneMiniGame");
 			SetCountText();
 			SetLivesText ();
 			SetCluesText ();
 		}
 
 		else if (other.gameObject.CompareTag ("Insider")) {
-			SceneManager.LoadScene("SceneMiniGame");
+			if (clues_counter <= 1) {
+				SceneManager.LoadScene ("BadEnding");
+			}
+			else if (clues_counter <= 3) {
+				SceneManager.LoadScene ("NeutralEnding");
+			}
+			else if (clues_counter == 4) {
+				SceneManager.LoadScene ("GoodEnding");
+			}
 		}
 	}
 }

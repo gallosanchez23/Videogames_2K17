@@ -27,7 +27,7 @@ public class Weapon : MonoBehaviour {
 
 	void Start () {
 		bullets = 10;
-		countText.text = "Balas restantes: " + bullets.ToString();
+		countText.text = "x " + bullets.ToString();
 	}
 
 	void OnGUI() {
@@ -87,7 +87,7 @@ public class Weapon : MonoBehaviour {
 			Shoot ();
 			speed = 0;
 			bullets--;
-			countText.text = "Balas restantes: " + bullets.ToString();
+			countText.text = "x " + bullets.ToString();
 			if(bullets == 0) Application.LoadLevel("GameOver");
 		}
 		if (Input.GetKey ("down")) RotateLeft();

@@ -35,7 +35,7 @@ public class random : MonoBehaviour {
 			transform.position = pos;
 			if(count == 0) // win condition
 			{
-				Application.LoadLevel("Victory");
+				Application.LoadLevel("Outer Level");
 			}
 		}
 	}
