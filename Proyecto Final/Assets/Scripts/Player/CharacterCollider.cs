@@ -98,146 +98,121 @@ public class CharacterCollider : MonoBehaviour{
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
-		if(other.gameObject.CompareTag("Key")){
-			AudioSource.PlayClipAtPoint(keySound, this.transform.position, 1.0f);
-			other.gameObject.SetActive(false);
+		if (other.gameObject.CompareTag ("Key")) {
+			AudioSource.PlayClipAtPoint (keySound, this.transform.position, 1.0f);
+			other.gameObject.SetActive (false);
 			keys_counter++;
-			SetCountText();
-		}
-
-		else if(other.gameObject.CompareTag("MainBtnT")){
-			AudioSource.PlayClipAtPoint(FX_button, this.transform.position, 1.0f);
-			main_btn_t[0].SetActive(false);
-			main_btn_f[0].SetActive(true);
-			if(character_gate[0].activeSelf){
-				character_gate[0].SetActive(false);
+			SetCountText ();
+		} else if (other.gameObject.CompareTag ("MainBtnT")) {
+			AudioSource.PlayClipAtPoint (FX_button, this.transform.position, 1.0f);
+			main_btn_t [0].SetActive (false);
+			main_btn_f [0].SetActive (true);
+			if (character_gate [0].activeSelf) {
+				character_gate [0].SetActive (false);
 			}
-			for(int i = 0; i < 3; i++){
-			if(!true_btns[i].activeSelf){
-				true_btns[i].SetActive(true);
+			for (int i = 0; i < 3; i++) {
+				if (!true_btns [i].activeSelf) {
+					true_btns [i].SetActive (true);
 				}
 			}
-			for(int i = 0; i < 6; i++){
-				if(false_objects[i].activeSelf){
-					false_objects[i].SetActive(false);
+			for (int i = 0; i < 6; i++) {
+				if (false_objects [i].activeSelf) {
+					false_objects [i].SetActive (false);
 				}
 			}
-		}
-
-		else if(other.gameObject.CompareTag("GreenBtnT")){
-			AudioSource.PlayClipAtPoint(FX_button, this.transform.position, 1.0f);
-			other.gameObject.SetActive(false);
-			green_btn_f[0].SetActive(true);
-		}
-
-		else if(other.gameObject.CompareTag("BlueBtnT")){
-			AudioSource.PlayClipAtPoint(FX_button, this.transform.position, 1.0f);
-			if(!green_btn_t[0].activeSelf){
-				other.gameObject.SetActive(false);
-				blue_btn_f[0].SetActive(true);
-			}
-		else{
-				other.gameObject.SetActive(false);
+		} else if (other.gameObject.CompareTag ("GreenBtnT")) {
+			AudioSource.PlayClipAtPoint (FX_button, this.transform.position, 1.0f);
+			other.gameObject.SetActive (false);
+			green_btn_f [0].SetActive (true);
+		} else if (other.gameObject.CompareTag ("BlueBtnT")) {
+			AudioSource.PlayClipAtPoint (FX_button, this.transform.position, 1.0f);
+			if (!green_btn_t [0].activeSelf) {
+				other.gameObject.SetActive (false);
 				blue_btn_f [0].SetActive (true);
-				green_btn_t[0].SetActive(false);
-				green_btn_f[0].SetActive(true);
-				green_gate[0].SetActive(true);
-				red_btn_t[0].SetActive(false);
-				red_btn_f[0].SetActive(true);
-				red_gate[0].SetActive(true);
-				main_btn_t[0].SetActive(true);
-				main_btn_f[0].SetActive(false);
+			} else {
+				other.gameObject.SetActive (false);
+				blue_btn_f [0].SetActive (true);
+				green_btn_t [0].SetActive (false);
+				green_btn_f [0].SetActive (true);
+				green_gate [0].SetActive (true);
+				red_btn_t [0].SetActive (false);
+				red_btn_f [0].SetActive (true);
+				red_gate [0].SetActive (true);
+				main_btn_t [0].SetActive (true);
+				main_btn_f [0].SetActive (false);
 			}
-		}
-
-		else if(other.gameObject.CompareTag("RedBtnT")){
-			AudioSource.PlayClipAtPoint(FX_button, this.transform.position, 1.0f);
-			if(!green_btn_t[0].activeSelf && !blue_btn_t[0].activeSelf){
-				other.gameObject.SetActive(false);
-				red_btn_f[0].SetActive(true);
-				key_gate[0].SetActive(false);
-				evidence_gate[0].SetActive(false);
+		} else if (other.gameObject.CompareTag ("RedBtnT")) {
+			AudioSource.PlayClipAtPoint (FX_button, this.transform.position, 1.0f);
+			if (!green_btn_t [0].activeSelf && !blue_btn_t [0].activeSelf) {
+				other.gameObject.SetActive (false);
+				red_btn_f [0].SetActive (true);
+				key_gate [0].SetActive (false);
+				evidence_gate [0].SetActive (false);
+			} else {
+				other.gameObject.SetActive (false);
+				red_btn_f [0].SetActive (true);
+				blue_btn_t [0].SetActive (false);
+				blue_btn_f [0].SetActive (true);
+				blue_gate [0].SetActive (true);
+				green_btn_t [0].SetActive (false);
+				green_btn_f [0].SetActive (true);
+				green_gate [0].SetActive (true);
+				main_btn_t [0].SetActive (true);
+				main_btn_f [0].SetActive (false);
 			}
-			else{
-				other.gameObject.SetActive(false);
-				red_btn_f[0].SetActive(true);
-				blue_btn_t[0].SetActive(false);
-				blue_btn_f[0].SetActive(true);
-				blue_gate[0].SetActive(true);
-				green_btn_t[0].SetActive(false);
-				green_btn_f[0].SetActive(true);
-				green_gate[0].SetActive(true);
-				main_btn_t[0].SetActive(true);
-				main_btn_f[0].SetActive(false);
-			}
-		}
-		else if(other.gameObject.CompareTag("Door")){
+		} else if (other.gameObject.CompareTag ("Door")) {
 			if (keys_counter > 0) {
-				AudioSource.PlayClipAtPoint(doorOpen, this.transform.position, 1.0f);
+				AudioSource.PlayClipAtPoint (doorOpen, this.transform.position, 1.0f);
 				keys_counter--;
 				SetCountText ();
 				other.gameObject.SetActive (false);
 			} else {
-				AudioSource.PlayClipAtPoint(doorLocked, this.transform.position, 1.0f);
+				AudioSource.PlayClipAtPoint (doorLocked, this.transform.position, 1.0f);
 				print ("Consigue la llave!!!");
 			}
-		}
-
-		else if(other.gameObject.CompareTag("Obj_MasterDoor")){
+		} else if (other.gameObject.CompareTag ("Obj_MasterDoor")) {
 			if (bMasterKey) {
-				AudioSource.PlayClipAtPoint(doorOpen, this.transform.position, 1.0f);
+				AudioSource.PlayClipAtPoint (doorOpen, this.transform.position, 1.0f);
 				bMasterKey = false;
 				Destroy (other.gameObject);
 			} else {
-				AudioSource.PlayClipAtPoint(doorLocked, this.transform.position, 1.0f);
+				AudioSource.PlayClipAtPoint (doorLocked, this.transform.position, 1.0f);
 				print ("Consigue la llave maestra!!!");
 			}
-		}
-
-		else if (other.gameObject.CompareTag ("FOV")) {
+		} else if (other.gameObject.CompareTag ("FOV")) {
 			transform.position = sPosition;
 			playerLives--;
 			SetLivesText ();
-			AudioSource.PlayClipAtPoint(guardCollision, this.transform.position, 1.0f);
+			AudioSource.PlayClipAtPoint (guardCollision, this.transform.position, 1.0f);
 
 			if (playerLives < 0) {
 				SceneManager.LoadScene ("Game Over");
 			}
-		}
-
-		else if (other.gameObject.CompareTag ("Obj_MasterKey")) {
-			AudioSource.PlayClipAtPoint(keySound, this.transform.position, 1.0f);
+		} else if (other.gameObject.CompareTag ("Obj_MasterKey")) {
+			AudioSource.PlayClipAtPoint (keySound, this.transform.position, 1.0f);
 			bMasterKey = true;
 			Destroy (other.gameObject);
-			masterKey[0].SetActive (bMasterKey);
-		}
-
-		else if (other.gameObject.CompareTag ("Obj_Clue")) {
+			masterKey [0].SetActive (bMasterKey);
+		} else if (other.gameObject.CompareTag ("Obj_Clue")) {
 			clues_counter++;
 			Destroy (other.gameObject);
 			SetCluesText ();
-		}
-
-		else if (other.gameObject.CompareTag ("NextLevel")) {
+		} else if (other.gameObject.CompareTag ("NextLevel")) {
 			bMasterKey = false;
-			masterKey[0].SetActive (bMasterKey);
-			transform.position = new Vector2(-8.0f,5.0f);
-			SceneManager.LoadScene("SceneMiniGame");
-			SetCountText();
+			masterKey [0].SetActive (bMasterKey);
+			transform.position = new Vector2 (-8.0f, 5.0f);
+			SceneManager.LoadScene ("SceneMiniGame");
+			SetCountText ();
 			SetLivesText ();
 			SetCluesText ();
-		}
-
-		else if (other.gameObject.CompareTag ("Insider")) {
+		} else if (other.gameObject.CompareTag ("Insider")) {
 			if (clues_counter <= 1) {
 				SceneManager.LoadScene ("Win3");
-			}
-			else if (clues_counter <= 3) {
+			} else if (clues_counter <= 3) {
 				SceneManager.LoadScene ("Win2");
-			}
-			else if (clues_counter == 4) {
+			} else if (clues_counter == 4) {
 				SceneManager.LoadScene ("Win1");
 			}
-		}
+		} 
 	}
 }
