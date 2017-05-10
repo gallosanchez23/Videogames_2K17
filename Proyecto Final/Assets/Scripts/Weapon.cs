@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Weapon : MonoBehaviour {
 
+	public AudioClip FX_bullet;
+
 	public float fFireRate = 0;
 	public float fDamage = 10;
 	public LayerMask toHit;
@@ -43,6 +45,7 @@ public class Weapon : MonoBehaviour {
 
 	void Shoot()
 	{
+		AudioSource.PlayClipAtPoint(FX_bullet, this.transform.position, 1.0f);
 		Vector2 shooting = new Vector2 ((firePoint.position.x-transform.position.x), (firePoint.position.y-transform.position.y));
 
 		clone = Instantiate (bala, transform.position, transform.rotation);
@@ -77,6 +80,7 @@ public class Weapon : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey ("space")) {
+			
 			speed += 0.1f;
 			barDisplay = speed*.04f;
 			print(speed);
@@ -85,6 +89,7 @@ public class Weapon : MonoBehaviour {
 		}
 		if (Input.GetKeyUp ("space")) {
 			Shoot ();
+
 			speed = 0;
 			bullets--;
 			countText.text = "x " + bullets.ToString();

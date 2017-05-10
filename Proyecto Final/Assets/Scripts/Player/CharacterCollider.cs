@@ -6,6 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class CharacterCollider : MonoBehaviour{
 
+	public AudioClip keySound;
+	public AudioClip doorOpen;
+	public AudioClip guardCollision;
+	public AudioClip doorLocked;
+	public AudioClip FX_button;
+
 	private int keys_counter;
 	public int playerLives;
 	private int clues_counter;
@@ -93,12 +99,14 @@ public class CharacterCollider : MonoBehaviour{
 
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.gameObject.CompareTag("Key")){
+			AudioSource.PlayClipAtPoint(keySound, this.transform.position, 1.0f);
 			other.gameObject.SetActive(false);
 			keys_counter++;
 			SetCountText();
 		}
 
 		else if(other.gameObject.CompareTag("MainBtnT")){
+			AudioSource.PlayClipAtPoint(FX_button, this.transform.position, 1.0f);
 			main_btn_t[0].SetActive(false);
 			main_btn_f[0].SetActive(true);
 			if(character_gate[0].activeSelf){
@@ -117,11 +125,13 @@ public class CharacterCollider : MonoBehaviour{
 		}
 
 		else if(other.gameObject.CompareTag("GreenBtnT")){
+			AudioSource.PlayClipAtPoint(FX_button, this.transform.position, 1.0f);
 			other.gameObject.SetActive(false);
 			green_btn_f[0].SetActive(true);
 		}
 
 		else if(other.gameObject.CompareTag("BlueBtnT")){
+			AudioSource.PlayClipAtPoint(FX_button, this.transform.position, 1.0f);
 			if(!green_btn_t[0].activeSelf){
 				other.gameObject.SetActive(false);
 				blue_btn_f[0].SetActive(true);
@@ -141,6 +151,7 @@ public class CharacterCollider : MonoBehaviour{
 		}
 
 		else if(other.gameObject.CompareTag("RedBtnT")){
+			AudioSource.PlayClipAtPoint(FX_button, this.transform.position, 1.0f);
 			if(!green_btn_t[0].activeSelf && !blue_btn_t[0].activeSelf){
 				other.gameObject.SetActive(false);
 				red_btn_f[0].SetActive(true);
@@ -162,19 +173,23 @@ public class CharacterCollider : MonoBehaviour{
 		}
 		else if(other.gameObject.CompareTag("Door")){
 			if (keys_counter > 0) {
+				AudioSource.PlayClipAtPoint(doorOpen, this.transform.position, 1.0f);
 				keys_counter--;
 				SetCountText ();
 				other.gameObject.SetActive (false);
 			} else {
+				AudioSource.PlayClipAtPoint(doorLocked, this.transform.position, 1.0f);
 				print ("Consigue la llave!!!");
 			}
 		}
 
 		else if(other.gameObject.CompareTag("Obj_MasterDoor")){
 			if (bMasterKey) {
+				AudioSource.PlayClipAtPoint(doorOpen, this.transform.position, 1.0f);
 				bMasterKey = false;
 				Destroy (other.gameObject);
 			} else {
+				AudioSource.PlayClipAtPoint(doorLocked, this.transform.position, 1.0f);
 				print ("Consigue la llave maestra!!!");
 			}
 		}
@@ -183,6 +198,7 @@ public class CharacterCollider : MonoBehaviour{
 			transform.position = sPosition;
 			playerLives--;
 			SetLivesText ();
+			AudioSource.PlayClipAtPoint(guardCollision, this.transform.position, 1.0f);
 
 			if (playerLives < 0) {
 				SceneManager.LoadScene ("Game Over");
@@ -190,6 +206,7 @@ public class CharacterCollider : MonoBehaviour{
 		}
 
 		else if (other.gameObject.CompareTag ("Obj_MasterKey")) {
+			AudioSource.PlayClipAtPoint(keySound, this.transform.position, 1.0f);
 			bMasterKey = true;
 			Destroy (other.gameObject);
 			masterKey[0].SetActive (bMasterKey);

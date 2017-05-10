@@ -9,7 +9,7 @@ public class random : MonoBehaviour {
 
 	int count;
 	public Text countText;
-	//public AudioClip impact;
+	public AudioClip impact;
 	// Use this for initialization
 	void Start () {
 		count = 5;
@@ -27,7 +27,7 @@ public class random : MonoBehaviour {
 	{
 		if(other.gameObject.CompareTag("Bullet"))
 		{
-			//AudioSource.PlayClipAtPoint(impact, this.transform.position);
+			AudioSource.PlayClipAtPoint(impact, this.transform.position);
 			count--; //score
 			countText.text = "x " + count.ToString();
 			Destroy (other.gameObject);
