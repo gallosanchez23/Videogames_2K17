@@ -83,7 +83,6 @@ public class Weapon : MonoBehaviour {
 			
 			speed += 0.1f;
 			barDisplay = speed*.04f;
-			print(speed);
 			if (speed > 25)
 				speed = 0;
 		}

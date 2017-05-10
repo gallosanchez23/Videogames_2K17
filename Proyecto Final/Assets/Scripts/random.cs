@@ -14,7 +14,7 @@ public class random : MonoBehaviour {
 	void Start () {
 		count = 5;
 		countText.text = "x " + count.ToString();
-		Vector2 pos = new Vector2 (Random.Range (0, 8), Random.Range (0, 5));
+		Vector2 pos = new Vector2 (Random.Range (0, 8), Random.Range (0, 3.5f));
 		transform.position = pos;
 	}
 
@@ -31,7 +31,7 @@ public class random : MonoBehaviour {
 			count--; //score
 			countText.text = "x " + count.ToString();
 			Destroy (other.gameObject);
-			Vector2 pos = new Vector2 (Random.Range (0, 9), Random.Range (0, 5));
+			Vector2 pos = new Vector2 (Random.Range (0, 9), Random.Range (0, 3.5f));
 			transform.position = pos;
 			if(count == 0) // win condition
 			{
