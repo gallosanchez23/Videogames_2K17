@@ -230,13 +230,13 @@ public class CharacterCollider : MonoBehaviour{
 
 		else if (other.gameObject.CompareTag ("Insider")) {
 			if (clues_counter <= 1) {
-				SceneManager.LoadScene ("BadEnding");
+				SceneManager.LoadScene ("Win3");
 			}
 			else if (clues_counter <= 3) {
-				SceneManager.LoadScene ("NeutralEnding");
+				SceneManager.LoadScene ("Win2");
 			}
 			else if (clues_counter == 4) {
-				SceneManager.LoadScene ("GoodEnding");
+				SceneManager.LoadScene ("Win1");
 			}
 		}
 	}
